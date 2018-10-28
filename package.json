@@ -1,0 +1,18 @@
+{
+  "name": "websiteproject",
+  "version": "1.0.0",
+  "description": "website project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alan O'Connor",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3",
+    "mongoose": "^5.0.9",
+    "request": "^2.83.0"
+  }
+}

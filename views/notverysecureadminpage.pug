@@ -1,0 +1,42 @@
+//- File: /views/test.pug
+//I might not use this after all
+extends layout
+
+block vars
+  - var navHome = 'nav-item'
+
+block content
+    h1(class="pageTitle") Admin Page
+    p Here is where you will be able to see and edit articles (create, read, update, delete). I know this is not secure, but security isn't required for the assignment guidelines. But it would be a really bad idea to put a site like this on the internet. It will be changed before I put it online.
+    br
+    h2(class="articleTitle") Creating
+    p You can create articles for the 3 different sections on the site.
+    p
+        a(href="update-news") Create news articles
+    p
+        a(href="update-investing") Create investing articles
+    p
+        a(href="update-learning") Create learning articles
+    br
+    h2(class="articleTitle")  Reading
+    p You can just view the articles normally as part of the CRUD's "read" section. All articles are public. No data on this site is private.
+
+    h2(class="articleTitle")  Updating (Editing)
+    p 
+        a(href="update-news") Update news articles
+    p
+        a(href="update-investing") Update investing articles
+    p
+        a(href="update-learning") Update learning articles
+    br
+    h2(class="articleTitle") Deleting
+    p
+        a(href="delete-news") Delete news articles
+    p   
+        a(href="delete-investing") Delete investing articles
+    p
+        a(href="delete-learning") Delete learning articles
+    
+    
+    //block scripts
+    //    script(src="/javascripts/test.js")

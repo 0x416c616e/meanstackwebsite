@@ -1,0 +1,16 @@
+//- File: /views/indexApi.pug
+extends layout
+
+mixin addButtonLink(url, buttonText)
+    button(formaction=url)= buttonText
+
+block vars
+    - var navHome = 'nav-item'
+    - var linkHome = 'localhost:3000'
+
+block content
+    h1(class="pagetitle") Admin API Panel
+    p I was going to change this more from the ZIP file example you had, but I did not finish in time, so this is not complete.
+    form
+        each query in queries
+            +addButtonLink(query.url, query.text)

@@ -1,0 +1,91 @@
+//- File: /views/layout.pug
+
+- var navHome = 'nav-item active'
+- var navNews = 'nav-item'
+- var navLearning = 'nav-item'
+- var navInvesting = 'nav-item'
+- var navAbout = 'nav-item'
+- var navContact = 'nav-item'
+- var navLogin = 'nav-item'
+- var navId = ''
+
+- var linkHome = '/'
+- var linkNews = 'news'
+- var linkLearning = 'learning'
+- var linkInvesting = 'investing'
+- var linkAbout = 'about'
+- var linkContact = 'contact'
+- var linkLogin = 'login'
+
+block vars
+
+doctype html
+html(lang="en")
+    head
+        title= title
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="icon", type="image/gif", href="/images/favicon.gif")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
+        link(rel="stylesheet", href="/stylesheets/style.css")
+        
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    body(id="page-home")
+        div(id="container")
+            header
+                div(class="text-center", id="headerThing")
+                    img(src="/images/SFRtextonlycropped.png", alt="SFR Banner", width="510", height="56", class="img-fluid")
+                nav(class="navbar navbar-toggleable-md navbar-inverse bg-faded")
+                    button(class="navbar-toggler navbar-toggler-right", type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+                        span(class="navbar-toggler-icon")
+                    a(class="navbar-brand") &nbsp;
+                    div(class="collapse navbar-collapse", id="navbarSupportedContent")
+                        a(class="navbar-brand text-center", href="index.html") &nbsp;
+                        ul(class="navbar-nav mr-auto")
+                            li(class= navHome)
+                                a(class="nav-link", href= linkHome) Home
+                            li(class= navNews)
+                                a(class="nav-link", href= linkNews) News
+                            li(class= navInvesting)
+                                a(class="nav-link", href= linkInvesting) Investing
+                            li(class= navLearning)
+                                a(class="nav-link", href= linkLearning) Learning
+                            li(class= navAbout)
+                                a(class="nav-link", href= linkAbout) About
+                            li(class= navContact)
+                                a(class="nav-link", href= linkContact) Contact
+                            li(class= navLogin, id= navId)
+                                a(href= linkLogin)
+                                    i(class="fa fa-sign-in", id="loginButton")
+                        div(id="formDivSearch")
+                            form(class="form-inline my-2 my-lg-0" id="searchButton")
+                                input(class="form-control mr-sm-2 fas fa-search", id="searchField", type="text", placeholder="\uF002")
+                                button(class="btn btn-outline-primary inline my-2 my-sm-0 ", id="searchButtonButton", type="submit") Search
+                
+            main(class="content")
+                    div(class="container")
+                        
+                        block content
+            footer(id="footerId")
+                a(class="fa fa-envelope", href="#") &nbsp;
+                a(class="fa fa-facebook", href="#") &nbsp;
+                a(class="fa fa-google-plus", href="#") &nbsp;
+                a(class="fa fa-twitter", href="#") &nbsp;
+                a(class="fa fa-instagram", href="#") &nbsp;
+                a(class="fa fa-linkedin", href="#") &nbsp;
+                a(class="fa fa-reddit", href="#") &nbsp;
+                a(class="fa fa-medium", href="#") &nbsp;
+                a(class="fa fa-youtube", href="#") &nbsp;
+                a(class="fa fa-soundcloud", href="#") &nbsp;
+                a(class="fa fa-github", href="#")
+                div(class="footerCopyright") 
+                    p Copyright &copy; 2018 Smart Financial Research
+
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        block scripts
+            script(src="https://code.jquery.com/jquery-3.1.1.slim.min.js", integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n", crossorigin="anonymous")
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js", integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb", crossorigin="anonymous")
+            script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js", integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn", crossorigin="anonymous")
+            script(src="/javascripts/footer.js")
+            script(src="/javascripts/search.js")

@@ -1,0 +1,24 @@
+//- File: /views/index.pug
+
+extends layout
+
+block content
+    h1(class="pageTitle") Home
+    p The hard-coded HTML files are what the site is supposed to look like. You can view them in the separate "hardcoded" subfolder.
+    p This will be a real website once this class is over, though there will be some modifications.
+    p I registered the domain name smartfinancialresearch.com and set up a mail server for it, but no web server yet.
+    p Later, I am thinking about adding Google Analytics, Google AdSense, and Open Graph Protocol (to the actual site, not the assignment).
+    p I might also write a static HTML generator so that I don't need the database and Node stuff or the login system on the backend because I doubt that I'd be able to secure it properly.
+    p For the time being, this site has 3 categories with articles from the database. Then there is a link to the older ones.
+    p The article category pages only show previews of the full article.
+    p The login system is not really secure because anyone could just use a directory enumeration tool such as <a href="https://www.owasp.org/index.php/Category:OWASP_DirBuster_Project">DirBuster</a> to find the hidden admin page, which currently does not make sure someone is logged in before letting them access it. However, it still meets the assignment guidelines because you only get a link to the login page if you provide the correct username and password. But I would not do this on a real website, and I will have to overhaul this before putting SFR online.
+    p I spent too much time trying to make the site look nice, and not enough time on the backend stuff.
+    p Please note that I did use some of the code that was in your ZIP files for demoing certain features. I am not claiming that as my own. For example, I turned the quote thing into a login page. At this point I think I will need to retake this class and I will do this assignment better next time. 
+    p For the time being, the social media links at the bottom of the page are placeholders. I will do the site's social media later. However, I think social media pages are an important part of a web presence because some people would rather follow a Twitter account than go to the actual website. Then the site still gets views, because people click links from Twitter/Facebook/etc. and THEN go to the site. But they don't always bookmark a site or view something in a browser. Often, people will primarily use social media apps instead of straight-up mobile browser stuff. Only when there are links on social media do they click things.
+    p Additionally, the search feature is also a placeholder that is non-functional, but it was not a requirement for the assignment. It is something I will work on later.
+    p Here's what I wanted to do for the datbase, but didn't implement due to running out of time: <br> class Article {<br>	String id;<br>	String category;<br>	String author;<br>	String title;<br>	String firstSentence;<br>	int timeStamp;<br>	String firstParagraph;<br>	String remainingParagraphs;<br>	String imageFileName;<br>}<br>
+    p The timestamp is an int because it could be 32-bit Unix time (i.e. 1524145972) and then they could be compared to each other to sort by the most recent articles.
+    
+
+    //block scripts
+    //    script(src="/javascripts/test.js")

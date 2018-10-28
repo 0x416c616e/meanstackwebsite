@@ -1,0 +1,548 @@
+/*   File: site.css
+ * Author: Alan O'Connor
+*/
+
+/** {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}*/
+
+
+/*I paid $$ for these fonts because they look nice*/
+@font-face{
+    font-family:"Proxima N W01 Reg";
+    src:url("../Fonts/1132159/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix");
+    src:url("../Fonts/1132159/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix") format("eot"),url("../Fonts/1132159/64017d81-9430-4cba-8219-8f5cc28b923e.woff2") format("woff2"),url("../Fonts/1132159/e56ecb6d-da41-4bd9-982d-2d295bec9ab0.woff") format("woff"),url("../Fonts/1132159/2aff4f81-3e97-4a83-9e6c-45e33c024796.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Proxima N W01 Reg It";
+    src:url("../Fonts/1132162/bc15a635-a09b-40d1-a5c4-70310166177d.eot?#iefix");
+    src:url("../Fonts/1132162/bc15a635-a09b-40d1-a5c4-70310166177d.eot?#iefix") format("eot"),url("../Fonts/1132162/129d49d6-5492-4ed1-96f7-0528c6d53abc.woff2") format("woff2"),url("../Fonts/1132162/9c69c878-2255-4027-8632-ed3635cddf45.woff") format("woff"),url("../Fonts/1132162/b7eb3871-e910-4522-9982-effb425a2714.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Proxima N W01 Bold";
+    src:url("../Fonts/1132183/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix");
+    src:url("../Fonts/1132183/fbc6b03a-b3a1-427c-a884-053deca3a53c.eot?#iefix") format("eot"),url("../Fonts/1132183/0d416408-95c6-4ad7-b08d-e60573d3b37d.woff2") format("woff2"),url("../Fonts/1132183/d999c07b-a049-4eb5-b8a6-4f36ae25e67e.woff") format("woff"),url("../Fonts/1132183/4d4a75f5-d32a-4a09-8665-133afd39cc37.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Proxima N W01 Bold It";
+    src:url("../Fonts/1132186/cb0c3396-af1a-4c16-95aa-8085e21044c7.eot?#iefix");
+    src:url("../Fonts/1132186/cb0c3396-af1a-4c16-95aa-8085e21044c7.eot?#iefix") format("eot"),url("../Fonts/1132186/a6315c03-b55d-42b0-8ed6-79060867137d.woff2") format("woff2"),url("../Fonts/1132186/46d5674a-f287-4240-b87a-f207aeb83064.woff") format("woff"),url("../Fonts/1132186/9bd640b2-9a56-4391-b213-767ae9c30ef4.ttf") format("truetype");
+}
+
+#redWarning {
+  color: red;
+}
+
+/*footer {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #bbbbbb;
+}*/
+
+/*container {
+    display: block;
+}*/
+
+@media (max-width:575px) {
+  input#searchField {
+    display: inline; /*weird workaround for things looking bad*/
+  }
+}
+
+#container main div p a {
+  text-decoration: none;
+}
+
+#container main div p a:hover {
+  color:#374785;
+}
+
+
+.investingPageSelection p, .learningPageSelection p, .newsPageSelection p {
+  margin: auto;
+  text-align: center;
+}
+
+#searchField {
+  width: 50%;
+}
+
+
+#loginButton {
+  color: #c9cbd4;
+}
+
+i#loginButton.fa.fa-sign-in {
+  position: relative;
+  top: 3px;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 15px;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+
+main {
+    font-family: "Proxima N W01 Reg";
+    /*font-size: 1.3rem;*/
+    line-height: 1.5;
+    background-color: #fafafa;
+    color: #24305e;
+}
+
+main h1 {
+    padding-top: 10px;
+    font-family:"Proxima N W01 Bold";
+    padding-bottom: 10px;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+main p {
+    font-family: "Proxima N W01 Reg";
+    padding-bottom: 10px;
+    margin-left: 13%;
+    margin-right: 13%;
+    text-align:justify;
+}
+
+/*.active {
+    color: #4EADFF;
+}*/
+
+
+
+div.authorAndDate {
+  font-style: italic;
+  font-size: 14px;
+}
+
+
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: "Proxima N W01 Bold";
+}
+
+h3 {
+  font-size: 26px;
+}
+
+footer, footer a {
+    font-family: "Proxima N W01 Reg";
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color:#24305e;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer {
+    padding-bottom: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #fafafa;
+}
+
+footer a:hover, footer a:active, {
+    text-decoration: none;
+    color:#374785;
+}
+
+.fa, .fa:active, .fa:hover {
+    text-decoration: none;
+}
+
+input[type="text"], textarea, textarea:active {
+
+    background-color : #fafafa; 
+  
+  }
+/*social media icons*/
+
+/*.fa-envelope, .fa-envelope:active, .fa-envelope:hover, 
+.fa-google-plus, .fa-google-plus:active, .fa-google-plus:hover,
+.fa-twitter, .fa-twitter:active, .fa-twitter:hover,
+.fa-youtube, .fa-youtube:active, .fa-youtube:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+ {
+    text-decoration: none;
+}*/
+
+#headerThing {
+    background: #24305e;
+    /*background: linear-gradient(to top, #24305e, #374785);*/    
+    /*uncomment the above line to use a gradient instead of a solid color
+    which looks better? I am not sure*/
+    padding-top: 5px;
+}
+
+header {
+  font-family:"Proxima N W01 Reg";
+}
+
+.pageTitle {
+    text-align: center;
+}
+
+
+/*button stuff*/
+.btn,
+.btn-primary,
+.btn-primary:visited,
+.btn-success:visited,
+.my-2,.my-sm-0, 
+.btn-primary:hover, .btn-success:hover,
+.btn-success:active,.btn-primary:active,
+.btn-success:focus, .btn-primary:focus, 
+.btn-outline-success, .btn-success
+ {
+    color: #c9cbd4 !important;
+    background-color: #24305e;
+    border-color: #c9cbd4 !important;
+    font-family:"Proxima N W01 Reg" !important;
+
+}
+
+
+
+.btn-outline-primary:hover {
+    background-color: #374785 !important;
+    border-color: #374785 !important;
+    color: #ffffff !important;
+    font-family:"Proxima N W01 Reg" !important;
+}
+
+
+
+#loginButton:hover, #loginButton:active{
+  color: #fafafa;
+}
+
+#searchButton {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family:"Proxima N W01 Reg";
+}
+
+
+
+
+
+/*all the stuff below is just for the navbar, nothing else (well, almost)*/
+
+/*I used this tool for generating the navbar CSS: https://work.smarchal.com/twbscolor/index.php*/
+
+/*additional help for colors:
+http://blog.visme.co/website-color-schemes/
+https://color.adobe.com/
+and also the color picker and colorizer tools in GIMP
+
+
+I used the above tool to generate navbar CSS but then I made a ton of changes to it afterwards
+
+I spent too much time on the CSS and not enough time on the other aspects of this project
+*/
+
+
+.navbar {
+    background-color: #24305e;
+  }
+  .navbar .navbar-brand {
+    color: #c9cbd4;
+    size: 5px;
+    padding-top: 5px;
+    margin: 0;
+    padding-bottom: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+    color: #ffffff;
+  }
+  .navbar .navbar-text {
+    color: #c9cbd4;
+  }
+  .navbar .navbar-text a {
+    color: #ffffff;
+  }
+  .navbar .navbar-text a:hover,
+  .navbar .navbar-text a:focus {
+    color: #ffffff; 
+  }
+
+
+
+  .navbar .navbar-nav .nav-link {
+    color: #c9cbd4;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navbar .navbar-nav .nav-link:not(.disabled):hover,
+  .navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #ffffff;
+    padding-left: 10px;
+  }
+  .navbar .navbar-nav .dropdown-menu {
+    background-color: #24305e;
+    border-color: #374785;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-item {
+    color: #c9cbd4;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+  .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+  .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+    color: #ffffff;
+    background-color: #374785;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+    border-top-color: #374785;
+
+  }
+  .navbar .navbar-nav .nav-item.active .nav-link,
+  .navbar .navbar-nav .nav-item.active .nav-link:hover,
+  .navbar .navbar-nav .nav-item.active .nav-link:focus,
+  .navbar .navbar-nav .nav-item.show .nav-link,
+  .navbar .navbar-nav .nav-item.show .nav-link:hover,
+  .navbar .navbar-nav .nav-item.show .nav-link:focus, #activeLoginButton {
+    color: #ffffff;
+    background-color: #374785;
+    text-align: center;
+  }
+  .navbar .navbar-toggle {
+    border-color: #374785;
+    text-align: center;
+  }
+  .navbar .navbar-toggle:hover,
+  .navbar .navbar-toggle:focus {
+    background-color: #374785;
+    text-align: center;
+  }
+  .navbar .navbar-toggle .navbar-toggler-icon {
+    color: #c9cbd4;
+    text-align: center;
+  }
+  .navbar .navbar-collapse,
+  .navbar .navbar-form {
+    border-color: #c9cbd4;
+    text-align: center;
+  }
+  .navbar .navbar-link {
+    color: #c9cbd4;
+    text-align: center;
+
+  }
+  .navbar .navbar-link:hover {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  @media (max-width: 575px) {
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #c9cbd4;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ffffff;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ffffff;
+      background-color: #374785;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #c9cbd4;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ffffff;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ffffff;
+      background-color: #374785;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #c9cbd4;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ffffff;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ffffff;
+      background-color: #374785;
+    }
+
+  }
+  
+  @media (max-width: 1199px) {
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #c9cbd4;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ffffff;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ffffff;
+      background-color: #374785;
+    }
+  }
+  
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #c9cbd4;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ffffff;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ffffff;
+    background-color: #374785;
+  }
+
+/*  a.navitem{
+    padding-left: 50px;
+    border: 5px;
+  }*/
+
+.container {
+  background-color: #fafafa;
+}
+
+
+
+/* @media (max-width: 575px) {
+  body{font-size: 14px;}
+}
+
+@media (max-width: 767px) {
+  body{font-size: 16px;}
+}
+
+@media (max-width: 991px) {
+  body{font-size: 18px;}
+}
+
+@media (max-width: 1199px) {
+  body{font-size: 20px;}
+} */
+
+html {
+  font-size: 24px;
+}
+.unbehaved-element {
+  font-size: 2em;
+}
+@media(max-width: 1580px) {
+  html {
+    font-size: 20px;
+  }
+  .unbehaved-element {
+    font-size: 1.9em; /* Fine tune unbehaved elements */
+  }
+}
+@media(max-width: 980px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+
+#searchField {
+  font-family:"Proxima N W01 Reg", FontAwesome;
+  height: 32px;
+  align-content: center;
+  align-items: center;
+}
+
+#searchButtonButton {
+  height: 32px;
+  padding-top: 0.1rem;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+}
+/*
+.searchText {
+}*/
+
+form#searchButton.form-inline.my-2.my-lg-0 {
+  margin: auto;
+  text-align: center;
+  display: inline;
+}
+
+
+
+footer a:hover, footer a:active, footer a:focus {
+  text-decoration:none;
+  color: #374785;
+}
+
+.footerCopyright {
+  font-size: 14px;
+}
+
+#articlePhoto {
+  margin: 0 auto;
+  width: 74%;
+}
+
+.authorAndDate, .articleTitle, .firstSentence {
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+.authorAndDate {
+  padding-bottom: 1.2rem;
+}
+
+#activeLoginButton {
+  color: #c9cbd4;
+  border-radius: .25rem;
+  height: 1.8rem;
+}
+
+#activeLoginButton #loginButton {
+  color: #fafafa;
+}
+
+#quoteHeading {
+  color: red;
+}

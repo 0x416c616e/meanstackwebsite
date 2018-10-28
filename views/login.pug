@@ -1,0 +1,35 @@
+//- File: /views/test.pug
+
+extends layout
+
+block vars
+  - var navHome = 'nav-item'
+  - var navLogin = 'nav-item active'
+  - var navId = 'activeLoginButton'
+  - var username = 'defaultuser'
+
+block content
+    //- File: /views/form.pug
+    h1(id="pageTitle") Login
+    p(id="redWarning") This won't be on the actual site, but here's the login info for you:
+    p Username: stephensmart or alan
+    p Password: password 
+    form(action="", method="")
+        fieldset
+            span(id="error-span", class="no-error") * 
+            p(id="usr-p")
+                label(for="usr") Username: 
+                input(id="usr", placeholder="Username", name="usr")
+            p(id="pwd-p")
+                label(for="pwd") Password: 
+                input(id="pwd", placeholder="Password", type="password", name="pwd")
+            p(id="quote-p")
+                button(id="quote") Log in
+    h1(id="quoteHeading") &nbsp;
+block scripts
+    script(src="/javascripts/form.js")
+    script(src="/javascripts/footer.js")
+    script(src="/javascripts/search.js")
+    
+    //block scripts
+    //    script(src="/javascripts/test.js")

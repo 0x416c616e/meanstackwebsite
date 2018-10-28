@@ -1,0 +1,42 @@
+//- File: queryResults.pug
+extends layout
+
+mixin semesterTable(semester)
+    table
+        caption= semester.term
+        each courseGrade in semester.courseGrade
+            tr
+                td= courseGrade.course.code
+                td= courseGrade.course.desc
+                td= courseGrade.course.hours
+                td= courseGrade.grade
+
+
+mixin studentRecord(student)
+    h3= "sid: " + student.sid + " - " + student.last + ", " + student.first
+    if student.semester
+        each semester in student.semester
+            p
+                +semesterTable(semester)
+            student.title
+            p testing 12345
+                
+
+block vars
+    //I know this is bad, but I had issues with relative paths with the API stuff
+    //because of a varying number of subdirectories
+    //so I couldn't just use .. or ../.. because it's not always the same number of
+    //directories up
+    - var linkHome = 'localhost:3000'
+    - var linkNews = 'localhost:3000/news'
+    - var linkLearning = 'localhost:3000/learning'
+    - var linkInvesting = 'localhost:3000/investing'
+    - var linkAbout = 'localhost:3000/about'
+    - var linkContact = 'localhost:3000/contact'
+    - var linkLogin = 'localhost:3000/login'
+
+block content
+    h1= pageHeader
+    each student in students
+        +studentRecord(student)
+        student.title
